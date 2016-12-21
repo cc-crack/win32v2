@@ -1,0 +1,25 @@
+<!DOCTYPE html> <!-- HTML5 -->
+<html>
+  <head>
+    <!-- Microsoft(R) documentation style -->
+    <title>UNICODE_STRING structure (Luismark Win32)</title>
+    <link rel="stylesheet" type="text/css" href="http://luismark.github.io/win32v2/ntdll.css" />
+  </head>
+  <body>
+    <!-- lm300002.html -->
+    <a href="http://luismark.github.io/win32v2/">&lt;-- Table of Contents</a><br/>
+    <h2>UNICODE_STRING structure</h2>
+    Represents a Unicode string.
+    <h3>Syntax (C++)</h3>
+    <pre><span class="cpp_keyword">struct</span> <span class="cpp_type">UNICODE_STRING</span><br/>&#123;&nbsp;&nbsp;<span class="cpp_keyword">unsigned short</span> Length;<br/>&nbsp;&nbsp;<span class="cpp_keyword">unsigned short</span> BufferLength;<br/>&nbsp;&nbsp;<span class="cpp_keyword">unsigned wchar_t</span>* Data;<br/>&#125;</pre>
+    <h3>Members</h3>
+    <h4>Length</h4>
+    The length of the Unicode string, in bytes, excluding the null terminator.
+    <h4>BufferLength</h4>
+    The length of the buffer containing the Unicode string, in bytes. <a href="http://luismark.github.io/win32v2/lm300003.html">RtlInitUnicodeString</a> initialises this member to the number of bytes in the Unicode string, excluding the null terminator.
+    <h4>Buffer</h4>
+    A pointer to the buffer containing the Unicode string.
+    <h3>See also</h3>
+    <a href="http://luismark.github.io/win32v2/lm300003.html">RtlInitUnicodeString</a>
+  </body>
+</html>
